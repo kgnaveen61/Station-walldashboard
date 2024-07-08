@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f8f5;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #d9ebf4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            color: #da4321;
+            text-decoration: none;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            margin-top: 20px;
+        }
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            color: #000101;
+            text-align: center;
+            text-decoration: none;
+        }
+        .card:nth-child(1) { background-color: #ceef6d; }
+        .card:nth-child(2) { background-color: #4e9506; }
+        .card:nth-child(3) { background-color: #ed8c42; }
+        .card:nth-child(4) { background-color: #079ddd; }
+        .card:nth-child(5) { background-color: #ffd966; }
+        .card:nth-child(6) { background-color: #b6b8b9; }
+        .card:nth-child(7) { background-color: #d78787; }
+        .card:nth-child(8) { background-color: #f02828; }
+        .card:nth-child(9) { background-color: #918ff5; }
+        
+        .ticket-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        .ticket-box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px;
+        }
+        .software {
+            color: green;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .hardware {
+            color: rgb(154, 45, 9);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2 class="title">Main Dashboard</h2>
+        <div class="title">
+            <a href="/Station/Activy Safety Alerts.html">
+                <h2>Active Safety Alerts POP UP</h2>
+            </a>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="card">Number of Station Deployed (500)</div>
+        <a href="/Station/No of Stations Online.html" class="card">No of Online Stations (440 / 88% )</a>
+        <a href ="/Station/No of Stations ON OFF.html" class="card">No of Power ON/OFF Stations(460 ON / 40 OFF)</a>
+        <a href = "/Station/No of dock Desabled reasons.html" class="card">No of Disabled docks  (250 / 3.3% )</a>
+        <a href ="/Station/Stations memory utilization.html" class="card">Stations memory utilization (18 / 3.6%)</a>
+        <a href ="/Station/Enerrgy meter reading.html" class="card">Wrong Energy Meter Readings (17 / 3.5%)</a>
+        <a href="/Station/Backdoor open status.html" class="card">Back door Open Stations (20/ 4%)</a>
+        <a href= "/Station/HVAC OFF.html " class="card">HVAC OFF (10 / 1%)</a>
+        <a href="/Station/Swapnot working.html" class="card">Swap not working (25 / 5%) </a>
+    </div>
+    <div class="ticket-container">
+        <div class="ticket-box software">
+            <a href="/Station/Softwaretickets.html" class="software"> Today's Total tickets: 200</a>
+        </div>
+    </div>
+</body>
+</html>
